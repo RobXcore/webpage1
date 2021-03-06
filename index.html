@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300'
+      rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700"
+      rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700"
+      rel="stylesheet">
+    <link
+      rel='stylesheet'href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/20ab91acc4.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="logo" src="./images/logo.png" alt="logo">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#">Info</a></li>
+          <li class="nav-list-item"><a href="#">Productos</a></li>
+          <li class="nav-list-item"><a href="#">Galería</a></li>
+          <li class="nav-list-item"><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section section__1">
+      <div class="wrapper">
+        <p class="title">"Maggy"<br>Pastelería</p>
+        <img class="section1bg"
+          src="./images/section1bg.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="section section__2">
+      <div class="bio card">
+        <img src="./images/maggy.JPG" alt="">
+      </div>
+      <div class="bio text">
+        <h2>Magaly Merino</h2>
+        <p class="parrafo1">
+          Magallánica, de origen en la isla grande de Chiloé, dedicada
+          a la fabricación
+          de
+          productos
+          de pastelería. Nacida el 13 de octubre de 1963, sus
+          productos
+          no solo destacan por su único e inigualable sabor,
+          sino que también,
+          por su refinada decoración, tanto en tortas de
+          fondant como de crema.
+          Con más de 10 años de experiencia, su catálogo de
+          productos se ha extendido
+          por sobre la pastelería, donde también sobresalen
+          los productos de
+          cocktelería salada y dulce.
+        </p>
+        <p class="parrafo2">
+          Tras incontables horas de perfeccionamiento en el arte de la
+          decoración y con una cartera de clientes que crece a un
+          ritmo acelerado, llegando a lugares como Concepción, Santiago y
+          España,
+          Magaly busca posicionarse como una de las mejores pasteleras
+          de la región.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="section section__3">
+      <h1 class="ejemplos">Ejemplos</h1>
+      <div class="sl-c">
+        <div class="edils edaf">
+          <img
+            src='./images/slide1.jpg'
+            alt=''>
+        </div>
+        <div class="edils edaf">
+          <img
+            src='./images/slide2.jpg'
+            alt=''>
+        </div>
+        <div class="edils edaf">
+          <img
+            src='./images/slide3.jpg'
+            alt=''>
+        </div>
+        <div class="edils edaf">
+          <img
+            src='./images/slide4.jpg'
+            alt=''>
+        </div>
+
+        <a class="prevv" title="Previous">&#10094</a>
+        <a class="nextt" title="Next">&#10095</a>
+      </div>
+      <div class="asdf">
+        <span class="tod"></span>
+        <span class="tod"></span>
+        <span class="tod"></span>
+        <span class="tod"></span>
+      </div>
+    </section>
+
+    <section id="contact">
+
+      <h1 class="section-header">CONTACTO</h1>
+
+      <div class="contact-wrapper">
+
+        <!---------------- 
+
+      CONTACT PAGE LEFT 
+    
+      ----------------->
+        <form id="contact-form" class="form-horizontal" role="form">
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name"
+                placeholder="NOMBRE" name="name" value="" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email"
+                placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+
+          <textarea class="form-control" rows="10" placeholder="MENSAJE"
+            name="message" required></textarea>
+
+          <button class="btn btn-primary send-button" id="submit" type="submit"
+            value="SEND">
+            <div class="button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+            </div>
+
+          </button>
+
+        </form>
+
+        <!---------------- 
+
+      CONTACT PAGE RIGHT 
+    
+      ----------------->
+        <div class="direct-contact-container">
+
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
+                  class="contact-text place">Punta Arenas, Chile</span></i></li>
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span
+                  class="contact-text phone"><a href="tel:+56996406203"
+                    title="Llámame">+56 9 96406203</a></span></i></li>
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span
+                  class="contact-text gmail"><a
+                    href="mailto:maggyta63@gmail.com" title="Send me
+                    an email">maggyta63@gmail.com</a></span></i></li>
+
+          </ul>
+
+          <hr>
+          <ul class="social-media-list">
+            <button><a href="https://www.facebook.com/pasteleriamaggy63"
+                target="_blank" class="btn-link" role="button">
+                <class class="fa fa-facebook-square fa-2x" aria-hidden="true"></class></a>
+            </button>
+            <button><a href="https://wa.me/+56996406203"
+                target="_blank" class="contact-icon">
+                <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+            </button>
+            <button><a href="https://www.instagram.com/maggyta63/"
+                target="_blank" class="contact-icon">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </button>
+            <button><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+            </button>
+          </ul>
+          <hr>
+
+          <div class="copyright">&copy; TODOS LOS DERECHOS RESERVADOS</div>
+        </div>
+
+      </div>
+
+    </section>
+  </body>
+</html>
