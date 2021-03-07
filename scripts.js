@@ -55,3 +55,23 @@ document
     e.target.elements.email.value = "";
     e.target.elements.message.value = "";
   });
+
+const btnInfo = document.querySelector(".nav1");
+const section2 = document.querySelector(".section__2");
+const section4 = document.querySelector("#contact");
+const btnContacto = document.querySelector(".nav4");
+const header = document.querySelector(".header");
+
+btnInfo.addEventListener("click", function (e) {
+  e.preventDefault();
+  section2.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+btnContacto.addEventListener("click", function (e) {
+  e.preventDefault();
+  section4.scrollIntoView({
+    behavior: "smooth",
+  });
+});

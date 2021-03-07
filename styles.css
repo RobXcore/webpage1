@@ -20,7 +20,6 @@ body {
 }
 .logo {
   width: 20rem;
-  display: flex;
 }
 .navbar-links ul {
   margin: 0;
@@ -62,7 +61,7 @@ body {
 }
 .section {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .section1bg {
   width: 100%;
@@ -133,27 +132,6 @@ body {
 
 .sl-c .nextt {
   right: 2px;
-}
-
-.d-c {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.asdf .tod {
-  cursor: pointer;
-  margin: 5px;
-  width: 20px;
-  height: 20px;
-  color: #333;
-  border-radius: 50%;
-  background-color: #dfd6ce;
-}
-
-.asdf .tod.active {
-  border: 2px solid green;
 }
 
 .ejemplos {
@@ -230,6 +208,13 @@ body {
   .bio.text {
     margin: 0 10px;
   }
+  .section__3 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+  #contact {
+    position: relative;
+  }
 }
 #contact {
   width: 100%;
@@ -242,7 +227,7 @@ body {
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
+  /* padding: 40px 0; */
   font: 300 60px "Oswald", sans-serif;
   letter-spacing: 6px;
   color: #fff;
