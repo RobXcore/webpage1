@@ -2,15 +2,30 @@
 
 const toggleButton = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".navbar-links");
-
+const bgVertical = document.querySelector(".section1bg2");
+const bgHorizontal = document.querySelector(".section1bg");
+const btnInfo = document.querySelector(".nav1");
+const section2 = document.querySelector(".section__2");
+const section4 = document.querySelector("#contact");
+const btnContacto = document.querySelector(".nav4");
+const header = document.querySelector(".header");
+const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 toggleButton.addEventListener("click", function () {
   navbarLinks.classList.toggle("active");
 });
 
+const showImage = function () {
+  if (viewportWidth > 569) {
+    bgVertical.classList.add("hidden");
+  } else if (viewportWidth < 569) {
+    bgHorizontal.classList.add("hidden");
+    bgVertical.classList.remove("hidden");
+  }
+};
+showImage();
 let currentSlide = 0;
 const slides = document.querySelectorAll(".edils");
 const dots = document.querySelectorAll(".tod");
-
 const init = (n) => {
   slides.forEach((slide, index) => {
     slide.style.display = "none";
@@ -55,12 +70,6 @@ document
     e.target.elements.email.value = "";
     e.target.elements.message.value = "";
   });
-
-const btnInfo = document.querySelector(".nav1");
-const section2 = document.querySelector(".section__2");
-const section4 = document.querySelector("#contact");
-const btnContacto = document.querySelector(".nav4");
-const header = document.querySelector(".header");
 
 btnInfo.addEventListener("click", function (e) {
   e.preventDefault();
