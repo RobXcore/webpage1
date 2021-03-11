@@ -1,19 +1,28 @@
 "use strict";
 
 const toggleButton = document.querySelector(".toggle-button");
+const navbar = document.querySelector(".rabvan");
 const navbarLinks = document.querySelector(".navbar-links");
+const navbarUl = document.querySelector(".nav-list");
 const bgVertical = document.querySelector(".section1bg2");
 const bgHorizontal = document.querySelector(".section1bg");
 const btnInfo = document.querySelector(".nav1");
+const allSections = document.querySelectorAll(".section");
+const section1 = document.querySelector(".section__1");
 const section2 = document.querySelector(".section__2");
+const section3 = document.querySelector(".section__3");
 const section4 = document.querySelector("#contact");
 const btnContacto = document.querySelector(".nav4");
 const header = document.querySelector(".header");
 const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
 toggleButton.addEventListener("click", function () {
   navbarLinks.classList.toggle("active");
 });
 
+navbarUl.addEventListener("click", function () {
+  navbarLinks.classList.remove("active");
+});
 const showImage = function () {
   if (viewportWidth > 569) {
     bgVertical.classList.add("hidden");
@@ -84,3 +93,31 @@ btnContacto.addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+
+//// Sticky navbar////
+const options = {
+  root: null,
+  threshold: [0.8],
+  rootMargin: "0px 0px 0px 0px",
+};
+const options2 = {
+  root: null,
+  threshold: 0.8,
+  rootMargin: "0px 0px 0px 0px",
+};
+const showNavbar = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      navbar.classList.add("sticky");
+      console.log(entry);
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  });
+};
+const observer = new IntersectionObserver(showNavbar, options);
+const observer2 = new IntersectionObserver(showNavbar, options2);
+
+console.log(section3);
+observer.observe(section2);
+observer2.observe(section4);

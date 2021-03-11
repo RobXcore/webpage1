@@ -7,16 +7,20 @@
   font-style: normal;
 }
 * {
-  box-sizing: border-box;
-}
-body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* <-- this is the fix */
 }
 .hidden {
   display: none;
 }
-.navbar {
+.rabvan {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,9 +74,13 @@ body {
   width: 100%;
   position: relative;
 }
-.title {
+.wrapper {
+  position: relative;
+}
+.eltit {
   position: absolute;
-  left: 35%;
+  top: 30%;
+  right: 35%;
   color: white;
   font-size: 7vw;
   z-index: 1;
@@ -174,7 +182,7 @@ body {
     width: 100%;
     margin-top: 2vh;
   }
-  .navbar {
+  .rabvan {
     flex-direction: column;
     margin: 0;
   }
@@ -423,10 +431,15 @@ hr {
 }
 
 @media screen and (max-width: 569px) {
-  .title {
-    margin-top: 80%;
+  .eltit {
+    position: absolute;
+    top: 20;
+    right: 0;
+    color: white;
     font-size: 9rem;
-    left: 10%;
+  }
+  .navbar-links.active {
+    height: 869px;
   }
   .section1bg2 {
     width: 100vw;
